@@ -16,6 +16,16 @@ const render = require("./lib/htmlRenderer");
 inquirer
   .prompt([
     {
+      type: "list",
+      name: "role",
+      message: "What is employee's role in the company?",
+      choices: [
+        "Manager",
+        "Engineer",
+        "Intern"
+      ]
+    },
+    {
       type: "input",
       name: "email",
       message: "Please enter employee's email address:"
