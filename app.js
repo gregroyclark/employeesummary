@@ -16,7 +16,9 @@ const render = require("./lib/htmlRenderer");
 inquirer
   .prompt([
     {
-      type: ""
+      type: "input",
+      name: "email",
+      message: "Please enter employee's email address:"
     }
 ])
 .then(function(data) {
