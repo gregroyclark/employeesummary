@@ -32,12 +32,11 @@ inquirer
     }
 ])
 .then(function(data) {
-  let filename = data.name.toLowerCase().split(' ').join('') +
-  ".html";
-  fs.writeFile(filename, HTML.stringify(data, null, '\t'), function(err) {
-   if (err) {
-       return console.log(err);
-   }
-   console.log("Success!");
-});
+//   fs.writeFile(filename, HTML.stringify(data, null, '\t'), function(err) {
+//    if (err) {
+//        return console.log(err);
+//    }
+//    console.log("Success!");
+// });
+render;
 });
